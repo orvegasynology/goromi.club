@@ -5,7 +5,9 @@
     --inner-border:linear-gradient(to bottom, grey, #a2a2a2);
     --inner-content:white
 }
-
+img {
+    background-color: #eeeeee;
+}
 #container {
     grid-template-areas: 
     "header header header"
@@ -31,7 +33,7 @@ header {
     position:relative;
     border-radius:6px ;
 }
-.border div {
+.border div:not(#tabList) {
     border:var(--outer-border);
     background-color: var(--inner-content);
     height:100%;
@@ -50,7 +52,7 @@ nav {
 }
 aside {
     grid-area:aside;
-    height: 600px;
+    height: 432px;
     width:250px
 }
 section {
@@ -67,18 +69,47 @@ section .flex {
     font-size:17px;
 }
 #welcome img {
-    background-color: #eeeeee;
     width:320px;
     height:20px;
     margin-top:10px
 }
 #welcome h2 {
-    margin-top:17px
+    margin-top:5px;
+    font-family:Pacifico;
+    font-weight:normal;
 }
 article {
     width:550px;
-    grid-area:article
+    grid-area:article;
 }
+article .border {
+    width:350px;
+}
+#tabList button {
+    border:2px solid black;
+    border-radius: 6px;
+    margin:3px;
+    margin-top:0;
+}
+article .border div:not(#tabList) {
+    height:190px;
+    padding:0px;
+}
+iframe {
+    height:100%;
+    width:100%;
+    border-radius: 6px;;
+}
+
 footer {
-    grid-area:footer
+    grid-area:footer;
+    text-align: center;
+}
+footer img {
+    width:80%;
+    height:20px
+}
+.button {
+    width:88px;
+    height:31px;
 }
