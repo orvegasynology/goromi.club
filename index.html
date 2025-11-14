@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> ✦ Kamurocho's #1 Hostess.</title>
+    <!--metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Kamurocho's #1 Hostess.">
+    <meta name="keywords" content="Kamurocho, Goromi, Hostesses, Sotenbori, Yakuza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/sitely/ass/icon.ico">
+    <meta property="og:url" content="https://goromi.club">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Goromi.Club">
+    <meta property="og:description" content="Kamurocho's #1 Hostess">
+    <meta property="og:image" content="https://goromi.club/sitely/ass/meta_ico.jpg">
+    <meta name="twitter:card" content="https://goromi.club/sitely/ass/meta_ico.jpg">
+    <meta property="twitter:domain" content="goromi.club">
+    <meta property="twitter:url" content="https://goromi.club">
+    <meta name="twitter:title" content="Goromi.Club">
+    <meta name="twitter:description" content="Kamurocho's #1 Hostess.">
+    <meta name="twitter:image" content="https://goromi.club/sitely/ass/meta_ico.jpg">
+    <!--scripts-->
+    <script src="https://kit.fontawesome.com/08a9b18601.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/sitely/scripts/load.js"></script>
+    <!--style/s-->
+    <link rel="stylesheet" href="/sitely/css/index.css">
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+
+<body>
+    <div class="crt"></div>
+    <div class="otherfilt"></div>
+    <div id="lace"></div>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="/sitely/ass/index/site-logo.png">
+            </div>
+            <div id="marqueeContainer">
+                <button id="slideLeft" style="position:absolute;top:34px;left:-4px"><img
+                        src="/sitely/ass/index/arrow-l.png"></button>
+
+                <div id="marquee">
+
+                    <div id="marqueeContent">
+                        <a href="/kamublo"><img src="/sitely/ass/index/b-blog.png"></a>
+                        <a href="/wardrobe"><img src="/sitely/ass/index/b-wardrobe.png"></a>
+                        <img src="img.png">
+                        <img src="img.png">
+                        <img src="img.png">
+                        <img src="img.png">
+                    </div>
+                </div>
+                <button id="slideRight" style="position:absolute;top:34px;right:-4px"><img
+                        src="/sitely/ass/index/arrow-r.png"></button>
+            </div>
+
+
+        </div>
+        <div id="divider"></div>
+        <div class="flex">
+            <div id="ad"></div>
+            <div id="mainContent">
+                <div class="flex">
+                    <div id="goromiWorld">
+                        <div id="gWW">
+                            <div id="yapSession">
+                                <p>Welcome to <span style="color: #eb2727;font-weight:bold;">goromi.club!</span> The
+                                    number one site for fans of the beautiful and incredible <span
+                                        style="color: #eb2727;font-weight:bold;">Goromi-chan! &hearts; &rarr;</span></p>
+                                        <p>ummmm yeah basically. its a fansite for goromi. but its under construction still, ok?</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div id="tabbedThing">
+                            <div id="tabList">
+                                <button data-src="/tabs/audio.html" class="active">✦ <i class="fa-solid fa-music"></i></button>
+                                <button data-src="/tabs/etc.html">✦ <i class="fa-solid fa-video"></i>
+                                </button>
+                                <button data-src="https://www3.cbox.ws/box/?boxid=3547550&boxtag=NnY8Pl">✦ <i class="fa-solid fa-comments"></i>
+                                </button>
+                                <button data-src="/tabs/updates.html">✦ <i class="fa-solid fa-newspaper"></i> 
+                                </button>
+                            </div>
+                            <div id="tab">
+                                <iframe id="tabContent" style="width:100%;height:255px">
+
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="theOtherHalf">
+                        <div id="goromiChan">
+                            <img src="/sitely/ass/index/esrb.png">
+                        </div>
+                        <div id="anotherAd"></div>
+                        <a href="https://www.roblox.com/games/16792512254/majima-world" target="_blank"><img src="/sitely/ass/index/majiworld.png" id="majiWorld"></a>
+                        <div id="buttonHolder">
+                            <div id="button">da button.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="yetAnotherDivider"></div>
+            <p>Goromi. Do you know this woman? Goromi... yes... i know her... she came to me in a dream... and she
+                looked as beautiful as an angel...</p>
+            <p>fan-made website. no copyright violation intended</p>
+            <p><img src="/sitely/ass/index/yuri-and-yaowie.png" style="height:100px"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="/sitely/scripts/marquee.js"></script>
+    <script>
+      //https://github.com/fishMonorail/pentumbra.space-scripts/blob/main/snowStars.js
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
+const particles = [
+  {s:50,fs:20,ws:10,colors: ['white']} //modify the star color here.
+];
+
+const styleSheet = document.createElement("style");
+styleSheet.innerText = `
+  @keyframes fall { 100% { margin-top: calc(100vh - 6px); } }
+  @keyframes wiggle { 50% { margin-left: 10px; } }
+  @keyframes spin-clockwise { 100% { transform: rotate(360deg); } }
+  @keyframes spin-counterclockwise { 100% { transform: rotate(-360deg); } }
+  .star {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*yeah kid thats a star*/
+    background-blend-mode:screen;
+    mix-blend-mode:screen;
+    pointer-events:none;
+    margin-top: -200px; /* Adjusted margin-top for stars container */
+  }
+`;
+document.head.appendChild(styleSheet);
+
+async function createParticles() {
+  const holder = Object.assign(document.createElement('div'), { id: 'holder', style: 'z-index:9999;position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none' });
+  document.body.appendChild(holder);
+
+  for (let i = 0; i < 100; i++) {
+    await delay(i * 100);
+    const p = particles[0];
+    const size = Math.floor(Math.random() * 21) + 10;
+    const color = p.colors[Math.floor(Math.random() * p.colors.length)];
+    const spinDirection = Math.random() < 0.5 ? 'spin-clockwise' : 'spin-counterclockwise';
+    const spinSpeed = Math.random() * 5 + 5; // Random spin speed between 5s and 10s
+    const opacity = Math.random() * 0.9 + 0.1; // Random opacity between 0.1 and 1
+    const elem = Object.assign(document.createElement('div'), {
+      className: 'star',
+      style: `width:${size}px;height:${size}px;background:${color};animation:wiggle ${p.ws}s infinite, fall ${p.fs}s linear infinite, ${spinDirection} ${spinSpeed}s linear infinite;margin:10px;position:absolute;left:${Math.random() * 99}%;opacity:${opacity};`
+    });
+    holder.appendChild(elem);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', createParticles);
+    </script>
+</body>
+
+</html>
+</body>

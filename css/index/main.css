@@ -1,0 +1,84 @@
+:root {
+    --container:800px;
+
+    --outer-border:2px solid black;
+    --inner-border:linear-gradient(to bottom, grey, #a2a2a2);
+    --inner-content:white
+}
+
+#container {
+    grid-template-areas: 
+    "header header header"
+    "aside section section"
+    "aside article article"
+    "footer footer footer";
+    gap:5px;
+    display:grid;
+    width:var(--container);
+    margin-left:auto;
+    margin-right:auto;  
+}
+header {
+    grid-area:header;
+    height:200px;
+    border-top:0;
+    border-radius:0px 0px 6px 6px;
+}
+.border {
+    border:var(--outer-border);
+    background:var(--inner-border);
+    padding:3px;
+    position:relative;
+    border-radius:6px ;
+}
+.border div {
+    border:var(--outer-border);
+    background-color: var(--inner-content);
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+    border-radius:6px;
+    padding:10px
+}
+nav {
+    height:30px;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    font-size:20px;
+    line-height:30px;
+}
+aside {
+    grid-area:aside;
+    height: 600px;
+    width:250px
+}
+section {
+    grid-area:section;
+    width:550px
+}
+section .flex {
+    gap:5px
+}
+#welcome {
+    width:350px;
+    text-align:center;
+    height:200px;
+    font-size:17px;
+}
+#welcome img {
+    background-color: #eeeeee;
+    width:320px;
+    height:20px;
+    margin-top:10px
+}
+#welcome h2 {
+    margin-top:17px
+}
+article {
+    width:550px;
+    grid-area:article
+}
+footer {
+    grid-area:footer
+}
