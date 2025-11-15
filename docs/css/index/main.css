@@ -81,11 +81,18 @@ aside div {
     padding:0px !important;
 }
 aside div img {
-    width:100%
+    width:100%;
+}
+.goromischoice {
+    background-color: red;
+    height:470px;
+    position:relative;
+    z-index: 1;
 }
 .maji {
     position:absolute;
-    bottom:0;
+    bottom:0px;
+    left:0px;
 }
 section {
     grid-area: section;
