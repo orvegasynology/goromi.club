@@ -1,0 +1,29 @@
+body {
+    font-family:elms, tahoma, sans-serif;
+    margin:10px;
+    width:250px;
+    background-color:#ff99d4;
+    color:#f9e6f1;
+    font-weight: 600;
+}
+h1,h2 {
+    font-family:pacifico, cursive, serif;
+    font-weight: normal;
+    color:#f9ecf3;
+    -webkit-text-stroke: 5px #ec76bb;
+}
+
+ul li {
+    list-style-type:square;
+    text-shadow: 2px 1px #e670b5;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color:#f8ffd3
+}
+hr {
+    border:2px solid #f9ecf3;
+    border-radius: 30px;
+}

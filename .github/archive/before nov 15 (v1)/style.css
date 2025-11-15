@@ -1,0 +1,52 @@
+/*default style for pages*/
+body {
+    margin: 0
+}
+::selection {
+  background-color:#ea5ea8;
+  color:white;
+}
+html {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    paint-order: stroke fill;
+}
+
+/*scrollbars wont show by default*/
+*::-webkit-scrollbar  {
+  width:0;
+}
+* {
+  scrollbar-width:none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+.flex {
+    display: flex;
+}
+/*fonts*/
+@font-face {
+  font-family:"edo";
+  src:url("/sitely/misc/edosz.ttf")
+}
+@font-face {
+  font-family:"meta";
+  src:url("/sitely/misc/meta.ttf")
+}
+@font-face {
+  font-family:"rodin";
+  src:url("/sitely/misc/rodin.otf")
+}
+@font-face {
+  font-family:"bizBold";
+  src:url("/sitely/misc/bizBold.ttf")
+}
+@font-face {
+  font-family:"biz";
+  src:url("/sitely/misc/biz.ttf")
+}
+

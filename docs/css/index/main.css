@@ -5,9 +5,6 @@
     --inner-content: #fff
 }
 
-img {
-    pointer-events: none;
-}
 
 #container {
     grid-template-areas:
@@ -41,7 +38,7 @@ header {
     box-shadow: inset 0px 0px 2px white
 }
 
-.border>div:not(#tabList) {
+.border > div:not(#tabList) {
     border: var(--outer-border);
     background-color: var(--inner-content);
     height: 100%;
@@ -55,17 +52,19 @@ header {
 nav {
     position: absolute;
     bottom: 10px;
-    width: 100%;
+    width: calc(100% - 20PX);
     box-sizing: border-box;
 }
-
+nav .border {
+    background:var(--inner-border) !important
+}
 nav .border div {
     gap: 3px;
     overflow-x: auto;
     display: flex;
     padding: 0 !important;
     padding-left: 3px !important;
-    padding-right: 3px !important
+    padding-right: 3px !important;
 }
 
 nav a img {
@@ -78,7 +77,16 @@ aside {
     grid-area: aside;
     width: 250px
 }
-
+aside div {
+    padding:0px !important;
+}
+aside div img {
+    width:100%
+}
+.maji {
+    position:absolute;
+    bottom:0;
+}
 section {
     grid-area: section;
     width: 550px
@@ -109,12 +117,7 @@ section .flex {
     font-family: Pacifico, cursive;
     font-weight: normal;
 }
-#welcome small {
-    position: absolute;
-    bottom:0px;
-    font-size: 8px;
-    right:0px;
-}
+
 #side {
     width:200px
 }
@@ -128,9 +131,18 @@ article {
     width: 550px;
     grid-area: article;
 }
+article .flex {
+    gap:3px
+}
 .ersb {
-    height:80px;
-    width:100%
+    height:100px;
+    width:80px;
+    margin-left:10px
+}
+.yaoi {
+    height:100px;
+    position:  absolute;
+    right:2px;
 }
 .perfectmatch {
     width:540px;
@@ -148,27 +160,38 @@ article .border {
     margin-top: 0;
 }
 
-article .border div:not(#tabList) {
-    height: 190px;
+article .flex .border div:not(#tabList) {
+    height: 260px;
     padding: 0px;
+    position: relative;
+}
+article h3{
+    width:340px;
+    position:absolute;
+    text-align: right;
+    pointer-events: none;
+    margin-top:-3px;
+    font-family:pacifico;
+    font-weight: normal;
 }
 
 iframe {
-    height: 100%;
     width: 100%;
+    height:100%;
     border-radius: 6px;
-    ;
 }
-
+.imgads {
+    width:200px;
+    position: relative;
+}
+.majiworld {
+    width:100%;
+}
 footer {
     grid-area: footer;
     text-align: center;
 }
 
-footer img {
-    width: 80%;
-    height: 20px;
-}
 
 .button {
     margin-top: 10px;

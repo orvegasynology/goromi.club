@@ -1,0 +1,31 @@
+
+        body {
+            color: #cd5a8c;
+            background-image: url("/docs/assets/index/updates-heart.png") !important;
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-position: bottom 10px right;
+            background-attachment: fixed;
+            -webkit-text-stroke: 2px #ffeff7;
+            margin: 10px;
+            font-weight: 500
+        }
+
+        .date {
+            background: #FFB4DE;
+            background: linear-gradient(90deg, rgba(255, 180, 222, 1) 0%, rgba(255, 239, 247, 0) 78%);
+            width: 100%;
+            padding: 2px;
+            color: #e84475
+        }
+
+        a {
+            color: #e84571;
+            font-weight: normal;
+            -webkit-text-stroke: 2px #ffeff7;
+            font-weight: 600
+        }
+
+        a:hover {
+            color: #ff87a7
+        }

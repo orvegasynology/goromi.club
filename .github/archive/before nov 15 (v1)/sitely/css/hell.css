@@ -1,0 +1,10 @@
+body {
+  background-color:black;
+  font-family: 'Times New Roman', Times, serif;
+  color:red;
+  text-align: center;
+}
+#container {
+  width:600px;
+  border:1px solid red;
+}

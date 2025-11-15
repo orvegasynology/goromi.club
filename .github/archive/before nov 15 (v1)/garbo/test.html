@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>d</title>
+</head>
+<body>
+    <h1>
+        i am so sorry.
+    </h1>
+    <div class="swiper">
+        <div class="swipe">
+        </div>
+        <div class="noswiping">
+            <div class="ball">
+            </div>
+        </div>
+    </div>
+    <style>
+        .swiper {
+    border:1px solid black;
+    width:240px;
+    height:320px;
+    padding:0.5em
+}
+.swipe {
+    border:1px solid black;
+    height:240px;
+}
+.noswiping {
+    margin-top:1em;
+    border:1px solid black;
+    height:60px;
+    position:relative
+}
+.ball {
+    height:60px;
+    background-color:black;
+    width:60px;
+    border-radius:100%;
+    position:Absolute;
+    animation:2s infinite swipe
+}
+@keyframes swipe {
+    0%, 100% {
+        left:10px
+    }
+    50% {
+        left:170px;
+    }
+}
+    </style>
+</body>
+</html>
