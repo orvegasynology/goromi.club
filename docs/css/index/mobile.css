@@ -1,0 +1,28 @@
+@media only screen and (max-width: 300px) {
+    :root {
+        --container:100%;
+    }
+    #container {
+        grid-template-areas: 
+        "header"
+        "section"
+        "pm"
+        "article"
+        "footer";
+        padding:3px;
+        border:3px solid red;
+        width:100%;
+        ;
+    }
+    aside {
+        display:none
+    }
+    header {
+        height:100px;
+        width:100%
+    }
+    section {
+        flex-wrap:wrap;
+        width:300px;
+    }
+}

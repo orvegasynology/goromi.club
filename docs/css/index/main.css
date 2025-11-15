@@ -6,7 +6,7 @@
 }
 
 img {
-    background-color: #eeeeee;
+    pointer-events: none;
 }
 
 #container {
@@ -55,7 +55,8 @@ header {
 nav {
     position: absolute;
     bottom: 10px;
-    width: 780px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav .border div {
@@ -92,16 +93,19 @@ section .flex {
     text-align: center;
     height: 220px;
     font-size: 17px;
+    position:relative;
 }
 
-#welcome img {
-    width: 320px;
-    height: 20px;
-    margin-top: 10px
+.bow {
+    position: absolute;
+    top:-40px;
+    right:-40px;
+    z-index:1;
+    pointer-events: none;
+    rotate:10deg;
 }
-
 #welcome h2 {
-    margin-top: 5px;
+    margin-top: 2px;
     font-family: Pacifico, cursive;
     font-weight: normal;
 }
@@ -110,7 +114,6 @@ section .flex {
     bottom:0px;
     font-size: 8px;
     right:0px;
-    pointer-events: none;
 }
 #side {
     width:200px
@@ -132,6 +135,7 @@ article {
 .perfectmatch {
     width:540px;
     height:100px;
+    grid-area:pm
 }
 article .border {
     width: 350px;
