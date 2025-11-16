@@ -23,6 +23,7 @@
     <script src="https://kit.fontawesome.com/08a9b18601.js" crossorigin="anonymous"></script>
     <script src="scripts/load.js"></script>
     <script src="scripts/alt-text.js"></script>
+    <script src="scripts/stars.js"></script>
     <!--styles-->
     <link rel="stylesheet" href="css/index/main.css">
     <link rel="stylesheet" href="css/index/mobile.css">
@@ -37,8 +38,8 @@
                 <nav>
                     <div class="border">
                         <div>
-                            <a href=""><img src="img.png" alt="link to the BLANK page."></a>
-                            <a href=""><img src="img.png" alt="link to the BLANK page."></a>
+                            <a href=""><img src="img.png" alt="link to the blog." style="background-color: #daccd4;"></a>
+                            <a href=""><img src="img.png" alt="link to the BLANK page." style="background-color: #daccd4;"></a>
                             <a href=""><img src="img.png" alt="link to the BLANK page."></a>
                             <a href=""><img src="img.png" alt="link to the BLANK page."></a>
                             <a href=""><img src="img.png" alt="link to the BLANK page."></a>
@@ -86,12 +87,12 @@
         <article>
             <div class="flex">
                 <div class="border">
-                    <h3>tab content</h3>
+                    <h3 id="tab"></h3>
                     <div id="tabList">
-                        <button class="active" data-src="meta/updates.html">✦ <i class="fa-solid fa-newspaper"></i>
+                        <button data-src="meta/video.html" title="Featured video">✦ <i class="fa-solid fa-video"></i></button>
+                        <button class="active" data-src="meta/updates.html" title="Updates">✦ <i class="fa-solid fa-newspaper"></i>
                         </button>
-                        <button data-src="tabs/etc.html">✦ <i class="fa-solid fa-video"></i></button>
-                        <button data-src="https://www3.cbox.ws/box/?boxid=3547550&boxtag=NnY8Pl">✦ <i
+                        <button data-src="https://www3.cbox.ws/box/?boxid=3547550&boxtag=NnY8Pl" title="Chatbox">✦ <i
                                 class="fa-solid fa-comments"></i></button>
                     </div>
                     <div>
@@ -99,16 +100,23 @@
                     </div>
                 </div>
                 <div class="imgads">
+                    <div class="border">
+                    <div>
+                        <a href="https://www.roblox.com/games/16792512254/majima-world" target="_blank">
                     <img src="assets/index/majiworld.png" class="majiworld" alt="Majima world"><br>
+
+                        </a>
+                    </div>
+
+                    </div>
                     <img src="assets/index/CERO_D.png" alt="CERO rating: rated Mature" class="ersb">
-                    <img src="assets/index/yuri-and-yaowie.png" class="yaoi">
                 </div>
             </div>
         </article>
         <footer>
             <p></p>
-            <p>✦ fan-made website. no copyright violation intended. all characters and related indicia belong to <a
-                    href="https://rggstudio.sega.com/" title="RGG Studio">龍が如くスタジオ.</a></p>
+            <p>✦ fan-made website. no copyright violation intended. all characters and related indicia belong to <br><a
+                    href="https://rggstudio.sega.com/" title="RGG Studio">龍が如くスタジオ.</a> unless stated otherwise</p>
             <p><a href="meta/sitemap.html" target="_blank">sitemap</a> &middot; <a href="https://goromifanclub.atabook.org/"
                     target="_blank">real guestbook</a> &middot;
                 <a href="rss.xml" target="_blank">rss</a> &middot; <a href="https://github.com/orvegasynology/goromi.club"
@@ -118,54 +126,5 @@
                     href="https://vielleicht.lol"><img src="img.png" alt="goromi.club button" class="button"></a></p>
         </footer>
     </div>
-       <script>
-  
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-  const particles = [
-    {s:50,fs:20,ws:10,colors: ['white']} //modify the star color here.
-  ];
-  
-  const styleSheet = document.createElement("style");
-  styleSheet.innerText = `
-    @keyframes fall { 100% { margin-top: calc(100vh - 6px); } }
-    @keyframes wiggle { 50% { margin-left: 10px; } }
-    @keyframes spin-clockwise { 100% { transform: rotate(360deg); } }
-    @keyframes spin-counterclockwise { 100% { transform: rotate(-360deg); } }
-    .star {
-      width: 50px;
-      height: 50px;
-      background: transparent;
-      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /*yeah kid thats a star*/
-      background-blend-mode:screen;
-      mix-blend-mode:screen;
-      pointer-events:none;
-      margin-top: -200px; /* Adjusted margin-top for stars container */
-    }
-  `;
-  document.head.appendChild(styleSheet);
-  
-  async function createParticles() {
-    const holder = Object.assign(document.createElement('div'), { id: 'holder', style: 'z-index:9999;position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none' });
-    document.body.appendChild(holder);
-  
-    for (let i = 0; i < 100; i++) {
-      await delay(i * 100);
-      const p = particles[0];
-      const size = Math.floor(Math.random() * 21) + 10;
-      const color = p.colors[Math.floor(Math.random() * p.colors.length)];
-      const spinDirection = Math.random() < 0.5 ? 'spin-clockwise' : 'spin-counterclockwise';
-      const spinSpeed = Math.random() * 5 + 5; // Random spin speed between 5s and 10s
-      const opacity = Math.random() * 0.9 + 0.1; // Random opacity between 0.1 and 1
-      const elem = Object.assign(document.createElement('div'), {
-        className: 'star',
-        style: `width:${size}px;height:${size}px;background:${color};animation:wiggle ${p.ws}s infinite, fall ${p.fs}s linear infinite, ${spinDirection} ${spinSpeed}s linear infinite;margin:10px;position:absolute;left:${Math.random() * 99}%;opacity:${opacity};`
-      });
-      holder.appendChild(elem);
-    }
-  }
-  
-  
-  document.addEventListener('DOMContentLoaded', createParticles);
-      </script>
 
 </body>

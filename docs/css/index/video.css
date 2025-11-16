@@ -1,0 +1,19 @@
+body {overflow: hidden;}
+
+video {
+    width:100%;
+}
+p {
+    position:absolute;
+    background-blend-mode: overlay;
+    color:#f54b89;
+    font-family: elms;
+    font-weight:700;
+    top:0px;
+    right:0px;
+    -webkit-text-stroke: 4px white;
+}
+
+a {
+    color:inherit
+}

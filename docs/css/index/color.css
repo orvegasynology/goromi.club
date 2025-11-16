@@ -11,7 +11,7 @@ body {
     --inner-content: #ffeff7
 }
 
-header div:not(header div div) /*ok man*/
+header div:not(header div div)/*ok man*/
     {
     background-image: url("/docs/assets/index/banner.png") !important
 }
@@ -50,11 +50,27 @@ article h3:after {
 aside div {
     background-color: #ff9cbd;
 }
-
+article .border {
+background-color: #ffa2d2;
+opacity: 1;
+background-image:  linear-gradient(135deg, #ff9cbd 25%, transparent 25%), linear-gradient(225deg, #ff9cbd 25%, transparent 25%), linear-gradient(45deg, #ff9cbd 25%, transparent 25%), linear-gradient(315deg, #ff9cbd 25%, #ffa2d2 25%);
+background-position:  10px 0, 10px 0, 0 0, 0 0;
+background-size: 20px 20px;
+background-repeat: repeat;
+}
 article h3 {
     font-family: Pacifico, cursive;
     font-weight: normal;
     font-size: 20px;
     color: #fbf2f6;
     -webkit-text-stroke: 4px #d85894;
+    z-index:99
+}
+.active {
+    border:2px solid #e05895 !important
+}
+article #tabList button {
+    border:var(--outer-border);
+    background-color: #ffe1ef;
+    color:#e05895
 }

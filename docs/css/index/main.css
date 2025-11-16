@@ -84,8 +84,9 @@ aside div img {
     width:100%;
 }
 .goromischoice {
-    background-color: red;
-    height:470px;
+    background-image: url("/docs/assets/index/can u handle dat.png");
+    background-size:100%;
+    height:490px;
     position:relative;
     z-index: 1;
 }
@@ -146,20 +147,18 @@ article .flex {
     width:80px;
     margin-left:10px
 }
-.yaoi {
-    height:100px;
-    position:  absolute;
-    right:2px;
-}
+
 .perfectmatch {
     width:540px;
     height:100px;
     grid-area:pm
 }
-article .border {
+article .border:not(article .border:last-of-type) {
     width: 350px;
 }
-
+article .border:last-of-type div {
+    height:203px !important
+}
 #tabList button {
     border: 2px solid black;
     border-radius: 6px;
@@ -193,6 +192,7 @@ iframe {
 }
 .majiworld {
     width:100%;
+    height:200px
 }
 footer {
     grid-area: footer;
