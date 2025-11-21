@@ -1,11 +1,8 @@
 body {
-    font-family: elms;
-    font-weight: 500;
-    background-image: url(/docs/assets/index/cushionbg.jpg);
+    background-image: url(../../assets/index/cushionbg.jpg);
 }
 
 :root {
-    --container: 800px;
     --outer-border: 2px solid #902c5e;
     --inner-border: linear-gradient(to top, #ff9cbd, #ff7cbb);
     --inner-content: #ffeff7
@@ -34,8 +31,6 @@ header div:not(header div div)/*ok man*/
 #welcome h2:after,
 #welcome h2:before,
 article h3:after {
-    content: " ✦ ";
-    font-size: 12px;
     color: #ffb7cf
 }
 
@@ -52,19 +47,11 @@ aside div {
 }
 article .border {
 background-color: #ffa2d2;
-opacity: 1;
 background-image:  linear-gradient(135deg, #ff9cbd 25%, transparent 25%), linear-gradient(225deg, #ff9cbd 25%, transparent 25%), linear-gradient(45deg, #ff9cbd 25%, transparent 25%), linear-gradient(315deg, #ff9cbd 25%, #ffa2d2 25%);
-background-position:  10px 0, 10px 0, 0 0, 0 0;
-background-size: 20px 20px;
-background-repeat: repeat;
 }
 article h3 {
-    font-family: Pacifico, cursive;
-    font-weight: normal;
-    font-size: 20px;
     color: #fbf2f6;
     -webkit-text-stroke: 4px #d85894;
-    z-index:99
 }
 .active {
     border:2px solid #e05895 !important

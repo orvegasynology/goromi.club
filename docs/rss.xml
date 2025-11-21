@@ -1,0 +1,14 @@
+<rss version="2.0">
+    <channel>
+        <title>Goromi Fan Club</title>
+        <description>Goromi Fan Club Updates</description>
+        <link>https://goromi.club</link>
+        <item>
+            <title>Testing the style lol</title>
+            <description>Hello nekoweb users! We have a guestbook now. Kinda cool, huh?</description>
+            <link>https://goromifanclub.atabook.org</link>
+            <guid>test</guid>
+            <pubDate>Thu 20 Nov 2025, 09:24:00 -0500</pubDate>
+        </item>
+    </channel>
+</rss>

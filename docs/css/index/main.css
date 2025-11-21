@@ -4,7 +4,10 @@
     --inner-border: linear-gradient(to bottom, #808080, #a2a2a2);
     --inner-content: #fff
 }
-
+body {
+    font-family: elms;
+    font-weight: 500;
+}
 
 #container {
     grid-template-areas:
@@ -111,7 +114,12 @@ section .flex {
     font-size: 17px;
     position:relative;
 }
-
+#welcome h2:after,
+#welcome h2:before,
+article h3:after {
+    content: " ✦ ";
+    font-size: 12px;
+}
 .bow {
     position: absolute;
     top:-40px;
@@ -153,6 +161,11 @@ article .flex {
     height:100px;
     grid-area:pm
 }
+article .border {
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;    
+}
 article .border:not(article .border:last-of-type) {
     width: 350px;
 }
@@ -179,6 +192,8 @@ article h3{
     margin-top:-3px;
     font-family:pacifico;
     font-weight: normal;
+    font-size: 20px;
+    z-index:99;
 }
 
 iframe {
