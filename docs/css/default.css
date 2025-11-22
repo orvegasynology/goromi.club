@@ -1,63 +1,41 @@
-/*default style for pages*/
-body {
-    margin: 0
-}
-::selection {
-  background-color:#ea5ea8;
-  color:white;
-}
-html {
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-* {
-    paint-order: stroke fill;
+:root {
+  --container: 800px;
+  --outer-border: 2px solid black;
+  --inner-border: linear-gradient(to bottom, #808080, #a2a2a2);
+  --inner-content: #fff;
 }
 
-/*scrollbars wont show by default*/
-*::-webkit-scrollbar  {
-  width:0;
+body {
+  margin: 0;
+  font-family: elms;
+  font-weight: 500;
+}
+html {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::selection {
+background-color:#ea5ea8;
+color:white;
 }
 * {
-  scrollbar-width:none;
+paint-order: stroke fill;
+scrollbar-width:none;
 }
+*::-webkit-scrollbar { width:0; }
 iframe {
-    width:100%;
-    box-sizing: border-box;
-    border:0;
+  width:100%;
+  box-sizing:border-box;
+  border:0;
 }
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
-}
-.flex {
-    display: flex;
-}
-/*fonts*/
-@font-face {
-  font-family:"edo";
-  src:url("../fonts/edosz.ttf")
-}
-@font-face {
-  font-family:"meta";
-  src:url("../fonts/meta.ttf")
-}
-@font-face {
-  font-family:"rodin";
-  src:url("../fonts/rodin.otf")
-}
-@font-face {
-  font-family:"bizBold";
-  src:url("../fonts/bizBold.ttf")
-}
-@font-face {
-  font-family:"biz";
-  src:url("../fonts/biz.ttf")
-}
-@font-face {
-  font-family:"pacifico";
-  src:url("../fonts/Pacifico-Regular.ttf")
-}
-@font-face {
-  font-family:"elms";
-  src:url("../fonts/ElmsSans-VariableFont_wght.ttf")
-}
+h1,h2,h3,h4,h5,h6,p { margin:0; }
+.flex { display:flex; }
+
+/* Fonts */
+@font-face { font-family:"edo"; src:url("../fonts/edosz.ttf"); }
+@font-face { font-family:"meta"; src:url("../fonts/meta.ttf"); }
+@font-face { font-family:"rodin"; src:url("../fonts/rodin.otf"); }
+@font-face { font-family:"bizBold"; src:url("../fonts/bizBold.ttf"); }
+@font-face { font-family:"biz"; src:url("../fonts/biz.ttf"); }
+@font-face { font-family:"pacifico"; src:url("../fonts/Pacifico-Regular.ttf"); }
+@font-face { font-family:"elms"; src:url("../fonts/ElmsSans-VariableFont_wght.ttf"); }
